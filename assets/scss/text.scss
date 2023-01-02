@@ -1,0 +1,559 @@
+.text-monospace {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New,
+    monospace !important;
+}
+.text-break {
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
+}
+.text-justify {
+  text-align: justify !important;
+}
+.text-wrap {
+  white-space: normal !important;
+}
+.text-nowrap {
+  white-space: nowrap !important;
+}
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.text-border {
+  color: var(--border-color) !important;
+}
+.text-border-complimentary {
+  color: var(--border-complimentary) !important;
+}
+@media (min-width: 576px) {
+  .text-sm-left {
+    text-align: left !important;
+  }
+  .text-sm-right {
+    text-align: right !important;
+  }
+  .text-sm-center {
+    text-align: center !important;
+  }
+}
+@media (min-width: 768px) {
+  .text-md-left {
+    text-align: left !important;
+  }
+  .text-md-right {
+    text-align: right !important;
+  }
+  .text-md-center {
+    text-align: center !important;
+  }
+}
+@media (min-width: 992px) {
+  .text-lg-left {
+    text-align: left !important;
+  }
+  .text-lg-right {
+    text-align: right !important;
+  }
+  .text-lg-center {
+    text-align: center !important;
+  }
+}
+@media (min-width: 1200px) {
+  .text-xl-left {
+    text-align: left !important;
+  }
+  .text-xl-right {
+    text-align: right !important;
+  }
+  .text-xl-center {
+    text-align: center !important;
+  }
+}
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+.text-transformation-none {
+  text-transform: none !important;
+}
+.font-weight-light {
+  font-weight: 300 !important;
+}
+.font-weight-lighter {
+  font-weight: lighter !important;
+}
+.font-weight-normal {
+  font-weight: 400 !important;
+}
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+.font-weight-bolder {
+  font-weight: bolder !important;
+}
+.font-italic {
+  font-style: italic !important;
+}
+.text-white {
+  color: #fff !important;
+}
+.text-grey {
+  color: var(--grey-color) !important;
+}
+/*Customized text*/
+.text-brand {
+  color: var(--brand-or-theme-text) !important;
+}
+.text-color {
+  color: var(--text-color) !important;
+}
+.text-header {
+  color: var(--text-header) !important;
+}
+
+.text-active {
+  color: var(--active-color) !important;
+}
+.text-inactive {
+  color: var(--inactive-color) !important;
+}
+.text-muted {
+  color: var(--inactive-color-lighter);
+}
+.text-danger {
+  color: var(--red-color) !important;
+}
+.text-gradient-yellow {
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
+  --text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-image: -webkit-gradient(
+    45deg,
+    rgba(5, 255, 163, 1) 0%,
+    rgba(0, 248, 0, 1) 0%,
+    rgba(248, 252, 0, 1) 100%
+  ) !important;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(5, 255, 163, 1) 0%,
+    rgba(0, 248, 0, 1) 0%,
+    rgba(248, 252, 0, 1) 100%
+  ) !important;
+  background-image: linear-gradient(
+    45deg,
+    rgba(5, 255, 163, 1) 0%,
+    rgba(0, 248, 0, 1) 0%,
+    rgba(248, 252, 0, 1) 100%
+  ) !important;
+}
+.text-brand-gradient-blue-green {
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
+  --text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  background-image: -webkit-gradient(45deg, #2096ff, #05ffa3) !important;
+  background-image: -webkit-linear-gradient(45deg, #2096ff, #05ffa3) !important;
+  background-image: linear-gradient(45deg, #2096ff, #05ffa3) !important;
+}
+
+.text-brand-gradient-150 {
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
+  --text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  background-image: -webkit-gradient(
+    150deg,
+    rgba(39, 67, 115, 1) 0%,
+    rgba(12, 98, 247, 1) 31%,
+    rgba(0, 212, 189, 1) 60%,
+    rgba(253, 231, 37, 1) 91%
+  ) !important;
+  background-image: -webkit-linear-gradient(
+    150deg,
+    rgba(39, 67, 115, 1) 0%,
+    rgba(12, 98, 247, 1) 31%,
+    rgba(0, 212, 189, 1) 60%,
+    rgba(253, 231, 37, 1) 91%
+  ) !important;
+  background-image: linear-gradient(
+    150deg,
+    rgba(39, 67, 115, 1) 0%,
+    rgba(12, 98, 247, 1) 31%,
+    rgba(0, 212, 189, 1) 60%,
+    rgba(253, 231, 37, 1) 91%
+  ) !important;
+}
+.text-viridis-gradient-vertical {
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
+  --text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  background-image: -webkit-gradient(
+    360deg,
+    rgba(68, 1, 84, 1) 0%,
+    rgba(68, 1, 84, 1) 5%,
+    rgba(72, 21, 103, 1) 10%,
+    rgba(72, 38, 119, 1) 15%,
+    rgba(69, 55, 129, 1) 20%,
+    rgba(64, 71, 136, 1) 25%,
+    rgba(57, 86, 140, 1) 30%,
+    rgba(51, 99, 141, 1) 35%,
+    rgba(45, 112, 142, 1) 40%,
+    rgba(40, 125, 142, 1) 45%,
+    rgba(35, 138, 141, 1) 50%,
+    rgba(31, 150, 139, 1) 55%,
+    rgba(32, 163, 135, 1) 60%,
+    rgba(41, 175, 127, 1) 65%,
+    rgba(60, 187, 117, 1) 70%,
+    rgba(85, 198, 103, 1) 75%,
+    rgba(115, 208, 85, 1) 80%,
+    rgba(149, 216, 64, 1) 85%,
+    rgba(184, 222, 41, 1) 90%,
+    rgba(220, 227, 25, 1) 95%,
+    rgba(253, 231, 37, 1) 100%
+  ) !important;
+  background-image: -webkit-linear-gradient(
+    360deg,
+    rgba(68, 1, 84, 1) 0%,
+    rgba(68, 1, 84, 1) 5%,
+    rgba(72, 21, 103, 1) 10%,
+    rgba(72, 38, 119, 1) 15%,
+    rgba(69, 55, 129, 1) 20%,
+    rgba(64, 71, 136, 1) 25%,
+    rgba(57, 86, 140, 1) 30%,
+    rgba(51, 99, 141, 1) 35%,
+    rgba(45, 112, 142, 1) 40%,
+    rgba(40, 125, 142, 1) 45%,
+    rgba(35, 138, 141, 1) 50%,
+    rgba(31, 150, 139, 1) 55%,
+    rgba(32, 163, 135, 1) 60%,
+    rgba(41, 175, 127, 1) 65%,
+    rgba(60, 187, 117, 1) 70%,
+    rgba(85, 198, 103, 1) 75%,
+    rgba(115, 208, 85, 1) 80%,
+    rgba(149, 216, 64, 1) 85%,
+    rgba(184, 222, 41, 1) 90%,
+    rgba(220, 227, 25, 1) 95%,
+    rgba(253, 231, 37, 1) 100%
+  ) !important;
+  background-image: linear-gradient(
+    360deg,
+    rgba(68, 1, 84, 1) 0%,
+    rgba(68, 1, 84, 1) 5%,
+    rgba(72, 21, 103, 1) 10%,
+    rgba(72, 38, 119, 1) 15%,
+    rgba(69, 55, 129, 1) 20%,
+    rgba(64, 71, 136, 1) 25%,
+    rgba(57, 86, 140, 1) 30%,
+    rgba(51, 99, 141, 1) 35%,
+    rgba(45, 112, 142, 1) 40%,
+    rgba(40, 125, 142, 1) 45%,
+    rgba(35, 138, 141, 1) 50%,
+    rgba(31, 150, 139, 1) 55%,
+    rgba(32, 163, 135, 1) 60%,
+    rgba(41, 175, 127, 1) 65%,
+    rgba(60, 187, 117, 1) 70%,
+    rgba(85, 198, 103, 1) 75%,
+    rgba(115, 208, 85, 1) 80%,
+    rgba(149, 216, 64, 1) 85%,
+    rgba(184, 222, 41, 1) 90%,
+    rgba(220, 227, 25, 1) 95%,
+    rgba(253, 231, 37, 1) 100%
+  ) !important;
+}
+.text-viridis-gradient-circle {
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
+  --text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+
+  background-image: -webkit-radial-gradient(
+    circle,
+    rgba(68, 1, 84, 1) 0%,
+    rgba(68, 1, 84, 1) 5%,
+    rgba(72, 21, 103, 1) 10%,
+    rgba(72, 38, 119, 1) 15%,
+    rgba(69, 55, 129, 1) 20%,
+    rgba(64, 71, 136, 1) 25%,
+    rgba(57, 86, 140, 1) 30%,
+    rgba(51, 99, 141, 1) 35%,
+    rgba(45, 112, 142, 1) 40%,
+    rgba(40, 125, 142, 1) 45%,
+    rgba(35, 138, 141, 1) 50%,
+    rgba(31, 150, 139, 1) 55%,
+    rgba(32, 163, 135, 1) 60%,
+    rgba(41, 175, 127, 1) 65%,
+    rgba(60, 187, 117, 1) 70%,
+    rgba(85, 198, 103, 1) 75%,
+    rgba(115, 208, 85, 1) 80%,
+    rgba(149, 216, 64, 1) 85%,
+    rgba(184, 222, 41, 1) 90%,
+    rgba(220, 227, 25, 1) 95%,
+    rgba(253, 231, 37, 1) 100%
+  ) !important;
+  background-image: radial-gradient(
+    circle,
+    rgba(68, 1, 84, 1) 0%,
+    rgba(68, 1, 84, 1) 5%,
+    rgba(72, 21, 103, 1) 10%,
+    rgba(72, 38, 119, 1) 15%,
+    rgba(69, 55, 129, 1) 20%,
+    rgba(64, 71, 136, 1) 25%,
+    rgba(57, 86, 140, 1) 30%,
+    rgba(51, 99, 141, 1) 35%,
+    rgba(45, 112, 142, 1) 40%,
+    rgba(40, 125, 142, 1) 45%,
+    rgba(35, 138, 141, 1) 50%,
+    rgba(31, 150, 139, 1) 55%,
+    rgba(32, 163, 135, 1) 60%,
+    rgba(41, 175, 127, 1) 65%,
+    rgba(60, 187, 117, 1) 70%,
+    rgba(85, 198, 103, 1) 75%,
+    rgba(115, 208, 85, 1) 80%,
+    rgba(149, 216, 64, 1) 85%,
+    rgba(184, 222, 41, 1) 90%,
+    rgba(220, 227, 25, 1) 95%,
+    rgba(253, 231, 37, 1) 100%
+  ) !important;
+}
+.text-viridis-gradient-150 {
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  background-clip: text;
+  --text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(
+    150deg,
+    rgba(68, 1, 84, 1) 0%,
+    rgba(68, 1, 84, 1) 5%,
+    rgba(72, 21, 103, 1) 10%,
+    rgba(72, 38, 119, 1) 15%,
+    rgba(69, 55, 129, 1) 20%,
+    rgba(64, 71, 136, 1) 25%,
+    rgba(57, 86, 140, 1) 30%,
+    rgba(51, 99, 141, 1) 35%,
+    rgba(45, 112, 142, 1) 40%,
+    rgba(40, 125, 142, 1) 45%,
+    rgba(35, 138, 141, 1) 50%,
+    rgba(31, 150, 139, 1) 55%,
+    rgba(32, 163, 135, 1) 60%,
+    rgba(41, 175, 127, 1) 65%,
+    rgba(60, 187, 117, 1) 70%,
+    rgba(85, 198, 103, 1) 75%,
+    rgba(115, 208, 85, 1) 80%,
+    rgba(149, 216, 64, 1) 85%,
+    rgba(184, 222, 41, 1) 90%,
+    rgba(220, 227, 25, 1) 95%,
+    rgba(253, 231, 37, 1) 100%
+  ) !important;
+  background-image: linear-gradient(
+    150deg,
+    rgba(68, 1, 84, 1) 0%,
+    rgba(68, 1, 84, 1) 5%,
+    rgba(72, 21, 103, 1) 10%,
+    rgba(72, 38, 119, 1) 15%,
+    rgba(69, 55, 129, 1) 20%,
+    rgba(64, 71, 136, 1) 25%,
+    rgba(57, 86, 140, 1) 30%,
+    rgba(51, 99, 141, 1) 35%,
+    rgba(45, 112, 142, 1) 40%,
+    rgba(40, 125, 142, 1) 45%,
+    rgba(35, 138, 141, 1) 50%,
+    rgba(31, 150, 139, 1) 55%,
+    rgba(32, 163, 135, 1) 60%,
+    rgba(41, 175, 127, 1) 65%,
+    rgba(60, 187, 117, 1) 70%,
+    rgba(85, 198, 103, 1) 75%,
+    rgba(115, 208, 85, 1) 80%,
+    rgba(149, 216, 64, 1) 85%,
+    rgba(184, 222, 41, 1) 90%,
+    rgba(220, 227, 25, 1) 95%,
+    rgba(253, 231, 37, 1) 100%
+  ) !important;
+}
+.text-underline {
+  text-decoration: underline !important;
+}
+.text-active-blue {
+  color: var(--active-blue) !important;
+}
+.text-alert {
+  color: var(--red-color) !important;
+}
+.text-plot-title {
+  font-size: 12px;
+}
+.text-regular {
+  font-size: 1rem;
+}
+.text-medium {
+  font-size: 0.84rem;
+}
+.text-small {
+  font-size: 0.76rem;
+  font-weight: 300;
+}
+
+.text-xs {
+  font-size: 0.7rem !important;
+  font-weight: 300;
+}
+
+.text-tiny {
+  font-size: 0.6rem !important;
+  font-weight: 300;
+}
+.text-xtiny {
+  font-size: 0.5rem !important;
+  font-weight: 300;
+}
+.text-14 {
+  font-size: 14px;
+}
+.text-20 {
+  font-size: 20px !important;
+}
+
+.user-select-all {
+  -webkit-user-select: all !important;
+  -moz-user-select: all !important;
+  user-select: all !important;
+}
+
+.user-select-auto {
+  -webkit-user-select: auto !important;
+  -moz-user-select: auto !important;
+  -ms-user-select: auto !important;
+  user-select: auto !important;
+}
+
+.user-select-none {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/*Customed Bootstrap Styles h1 - h6 p*/
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.h1,
+h1 {
+  font-size: 2.5rem;
+}
+.h2,
+h2 {
+  font-size: 2rem;
+}
+.h3,
+h3 {
+  font-size: 1.75rem;
+}
+.h4,
+h4 {
+  font-size: 1.5rem;
+}
+.h5,
+h5 {
+  font-size: 1.25rem;
+}
+.h6,
+h6 {
+  font-size: 1rem;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  letter-spacing: 0.0125rem !important;
+  line-height: 1.5;
+}
+.card-title {
+  margin-bottom: 0.75rem;
+}

@@ -1,0 +1,132 @@
+.border {
+  border: 1px solid var(--border-color) !important;
+}
+
+.border-0 {
+  border: 0 !important;
+}
+
+.border-top-0 {
+  border-top: 0 !important;
+}
+
+.border-bottom-0 {
+  border-bottom: 0 !important;
+}
+
+.border-1 {
+  border-width: 1px !important;
+}
+
+.border-2 {
+  border-width: 2px !important;
+}
+
+.border-3 {
+  border-width: 3px !important;
+}
+
+.border-4 {
+  border-width: 4px !important;
+}
+
+.border-5 {
+  border-width: 5px !important;
+}
+.top-nav-border-style {
+  border-bottom: 2px solid var(--active-color) !important;
+}
+/*Additional custom border styling*/
+
+.border {
+  border: 1px solid var(--border-color) !important;
+}
+.border-top {
+  border-top: 1px solid var(--border-color) !important;
+}
+.border-left {
+  border-left: 1px solid var(--border-color) !important;
+}
+.border-bottom {
+  border-bottom: 1px solid var(--border-color) !important;
+}
+.border-right {
+  border-right: 1px solid var(--border-color) !important;
+}
+.border-none {
+  border-style: none !important;
+}
+.border-theme {
+  border-color: var(--theme-color) !important;
+}
+.border-active {
+  border-color: var(--active-color) !important;
+}
+.border-gradient {
+  border-image: linear-gradient(165deg, #2096ff, #05ffa3) 1 100%;
+}
+.border-active-blue {
+  border-color: var(--active-blue) !important;
+}
+.border-brand {
+  border-color: var(--brand-color) !important;
+}
+.border-thick {
+  border-width: 8px !important;
+}
+.border-thin {
+  border-width: 4px !important;
+}
+.border-label {
+  border-width: 2px !important;
+}
+.border-top-left-rounded {
+  border-top-left-radius: 4px !important;
+}
+.border-top-right-rounded {
+  border-top-right-radius: 4px !important;
+}
+
+@-webkit-keyframes spinner-border {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes spinner-border {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.spinner-border {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid;
+  border-right: 0.25em solid transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border 0.75s linear infinite;
+  animation: spinner-border 0.75s linear infinite;
+}
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+  border-width: 0.2em;
+}
+
+.round-1 {
+  border-radius: 0.25rem !important;
+}
+.round-2 {
+  border-radius: 0.5rem !important;
+}
+.round-3 {
+  border-radius: 1rem !important;
+}
+.round-4 {
+  border-radius: 2rem !important;
+}
+
+.round-5 {
+  border-radius: 3rem !important;
+}

@@ -1,0 +1,63 @@
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: var(--text-color);
+  text-align: left;
+  caption-side: bottom;
+}
+th {
+  text-align: inherit;
+  border: none;
+}
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+table td {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+table {
+  border-spacing: 0;
+}
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+.table td,
+.table th {
+  padding: 0.75rem;
+  vertical-align: center;
+}
+.table td {
+  border-top: 1px solid var(--border-color);
+}
+.table thead th {
+  border: none !important;
+  font-weight: 500;
+}
+.table.table-sticky-header thead th {
+  position: sticky;
+}
+.table.table-header-box-background thead th {
+  background: var(--div-box-background);
+}
+.table.table-header-dashboard-background thead th {
+  background: var(--dashboard-background);
+}
+
+.table tbody + tbody {
+  border-top: 2px solid var(--border-color);
+}
+.table-sm td,
+.table-sm th {
+  padding: 0.3rem;
+}
+
+.table-borderless tbody + tbody,
+.table-borderless td,
+.table-borderless th,
+.table-borderless thead th {
+  border: 0;
+}

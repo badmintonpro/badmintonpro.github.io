@@ -1,0 +1,175 @@
+button {
+  border-radius: 0.125rem;
+  box-shadow: none;
+  border: none;
+  background: var(--active-blue);
+  //text-transform: uppercase;
+  color: white;
+  padding: 0.84rem 2.14rem;
+  font-size: 0.84rem;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button:hover {
+  cursor: pointer;
+}
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+button:disabled:hover {
+  cursor: default;
+}
+button:disabled {
+  opacity: 0.65;
+}
+button .mat-icon {
+  font-size: 18px;
+  align-self: center;
+  font-weight: bold;
+}
+
+.btn-link {
+  background-color: transparent;
+  color: var(--active-blue);
+}
+
+.btn-sm {
+  font-size: 0.81rem;
+  letter-spacing: 0.02rem;
+  padding: 0.5rem 1.6rem;
+}
+.btn-sm-outline-primary {
+  font-size: 0.81rem;
+  letter-spacing: 0.02rem;
+  padding: 0.38rem 1rem;
+  border: 2px solid var(--active-blue) !important;
+  background-color: transparent !important;
+  color: var(--active-blue) !important;
+}
+.btn-sm-outline-danger {
+  font-size: 0.81rem;
+  letter-spacing: 0.02rem;
+  padding: 0.38rem 1rem;
+  border: 2px solid var(--red-color) !important;
+  background-color: transparent !important;
+  color: var(--red-color) !important;
+}
+.btn-sm-outline-danger .mat-icon {
+  font-size: 0.84rem;
+}
+.btn-sm-outline-primary .mat-icon {
+  font-size: 0.84rem;
+}
+.btn-sm .mat-icon {
+  font-size: 0.84rem;
+}
+
+.btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+.btn-lg .mat-icon {
+  font-size: 1.5rem;
+  vertical-align: bottom;
+  font-weight: bold;
+}
+.btn-outline {
+  padding: 0;
+}
+.btn-close {
+  background: transparent;
+  color: var(--text-color);
+}
+.btn-close:hover {
+  background: var(--border-color);
+}
+.btn-floating {
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:not([href]),
+a:not([href]):hover {
+  color: inherit;
+  text-decoration: none;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New,
+    monospace;
+  font-size: 1em;
+}
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+figure {
+  margin: 0 0 1rem;
+}
+img {
+  border-style: none;
+}
+img,
+svg {
+  vertical-align: middle;
+}
+svg {
+  overflow: hidden;
+}
+
+/*Customized button*/
+.btn-primary {
+  background-color: var(--active-blue);
+}
+.btn-outline-primary {
+  border: 2px solid var(--active-blue) !important;
+  background-color: transparent !important;
+  color: var(--active-blue) !important;
+  padding: 0.71rem 2.14rem;
+}
+.btn-category {
+  padding: 0;
+  margin: 0;
+  font-size: 16px !important;
+  line-height: 16px !important;
+  font-weight: 400 !important;
+  background: transparent;
+  min-width: 1.5em;
+  height: 16px;
+  user-select: none;
+}
+.btn-category:hover {
+  cursor: pointer;
+}
+.btn-category-small {
+  font-size: 14px !important;
+  line-height: 12px !important;
+  font-weight: 400 !important;
+  background: transparent;
+  min-width: 1.5em;
+  user-select: none;
+}
+.btn-aqua-gradient {
+  background-image: -webkit-gradient(45deg, #005ffd, #05ffa3) !important;
+  background-image: -webkit-linear-gradient(45deg, #005ffd, #05ffa3) !important;
+  background-image: linear-gradient(45deg, #005ffd, #05ffa3) !important;
+  color: white;
+}
+.btn-badge {
+  padding: 0 0.25rem;
+  margin: 0 0.25rem;
+  color: white;
+  font-size: 0.81rem;
+  border-radius: 2px;
+}

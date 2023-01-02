@@ -1,0 +1,269 @@
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+html {
+  background: var(--dashboard-background);
+  color: var(--text-color);
+  font-family: var(--regular-font);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow: hidden !important;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+body {
+  background: var(--dashboard-background);
+  color: var(--text-color);
+  font-family: var(--regular-font);
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  max-height: 100vh !important; //Added this to see if ipad scroll issue fixed.
+  overflow: hidden !important;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.view {
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+.view .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+}
+.rgba-stylish-strong {
+  background-color: rgb(0 5 14 / 20%);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+.card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+.card > .list-group:first-child .list-group-item:first-child {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.card > .list-group:last-child .list-group-item:last-child {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.form-header {
+  box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+  color: #fff;
+  text-align: center;
+  margin-top: -3.13rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  border-radius: 0.125rem;
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+.material-icons-outlined {
+  font-family: "Material Icons Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+}
+.mat-icon {
+  width: auto !important;
+  height: auto !important;
+  user-select: none;
+}
+.mat-icon:hover {
+  cursor: pointer;
+}
+.icon-3x {
+  font-weight: 300;
+  font-size: 5rem;
+}
+.sort-icon {
+  position: relative;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+}
+.sort-icon:hover {
+  cursor: pointer;
+}
+.sort-icon:before,
+.sort-icon:after {
+  border: 4px solid transparent;
+  content: "";
+  height: 0;
+  top: 50%;
+  position: absolute;
+  width: 0;
+  left: 8px;
+}
+.sort-icon:before {
+  border-bottom-color: var(--text-header);
+  margin-top: -9px;
+}
+.sort-icon:after {
+  border-top-color: var(--text-header);
+  margin-top: 1px;
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+}
+
+.overlay .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.overlay .mask:hover {
+  opacity: 1 !important;
+}
+
+.custom-tooltip {
+  white-space: pre-line !important;
+  color: #fff;
+  background: var(--brand-color);
+  font-size: 0.84rem;
+}
+
+.mat-menu-content:not(:empty) {
+  padding: 0 !important;
+}
+.mat-menu-panel {
+  margin-top: 1rem;
+}
+.mat-checkbox {
+  font-family: var(--regular-font) !important;
+}
+.rotate-45 {
+  transform: rotate(45deg);
+}
+.rotate-90 {
+  transform: rotate(90deg);
+}
+.rotate-270 {
+  transform: rotate(270deg);
+}
+
+.exponential {
+  position: relative !important;
+  vertical-align: super !important;
+  font-size: 0.7rem;
+  left: -4px !important;
+  margin-right: -4px !important;
+}
+.exponential-x {
+  font-size: 0.84rem;
+  margin: 0 -4px !important;
+}
+.exponential-10 {
+  position: relative !important;
+}
+
+.number-format-4 {
+  min-width: 4.5rem !important;
+}
+.number-format-5 {
+  min-width: 5rem !important;
+}
+.mat-paginator,
+.mat-paginator-page-size .mat-select-trigger {
+  font-family: var(--regular-font) !important;
+}
+.mat-paginator-outer-container {
+  background: var(--div-box-background) !important;
+}
+.mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: var(--active-blue);
+}
+.mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: var(--active-blue);
+}
+
+label.mat-checkbox-layout {
+  margin-bottom: 0 !important;
+}
+
+.select-with-border {
+  border-radius: 2px;
+  padding: 8px;
+  border: solid 1px var(--border-color);
+}
